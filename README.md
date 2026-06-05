@@ -327,36 +327,36 @@ Potential improvements include:
 
 ---
 
-## Screenshots
+##  Screenshots
 
 ### 🏠 Home Page
 
 <p align="center">
-  <img src="public/screenshots/Home.png" width="900" />
+  <img src="./public/screenshots/Home.png" alt="Home Page" width="100%" />
 </p>
+
+---
 
 ### 👨‍💼 Host Dashboard
 
 <p align="center">
-  <img src="public/screenshots/HostDashboard.png" width="900" />
+  <img src="./public/screenshots/HostDashboard.png" alt="Host Dashboard" width="100%" />
 </p>
 
-### 📊 Event Dashboard
-
-<p align="center">
-  <img src="public/screenshots/Events.png" width="900" />
-</p>
+---
 
 ### 🌐 Public Event Page
 
 <p align="center">
-  <img src="public/screenshots/PublicEventPage.png" width="900" />
+  <img src="./public/screenshots/PublicEventPage.png" alt="Public Event Page" width="100%" />
 </p>
+
+---
 
 ### 🎟️ Attendee Dashboard
 
 <p align="center">
-  <img src="public/screenshots/AttendeeDashboard.png" width="900" />
+  <img src="./public/screenshots/AttendeeDashboard.png" alt="Attendee Dashboard" width="100%" />
 </p>
 
 ---
