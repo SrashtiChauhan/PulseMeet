@@ -25,7 +25,7 @@ PulseMeet enables hosts to create and manage public events while allowing attend
 
 ## Overview
 
-PulseMeet was developed as part of the **Byamn Summer Web Development Internship 2026 Assessment**.
+
 
 The platform provides a complete event management workflow including:
 
