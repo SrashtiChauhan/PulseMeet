@@ -29,6 +29,12 @@ This project was developed as part of the **Byamn Summer Web Development Interns
 
 ---
 
+# 🌐 Live Demo
+
+https://pulse-meet-nine.vercel.app
+
+---
+
 # 🌟 Core Features
 
 ## 👨‍💼 Host Features
