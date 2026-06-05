@@ -1,4 +1,4 @@
-# PulseMeet
+# 🚀 PulseMeet
 
 <div align="center">
 
@@ -8,84 +8,95 @@ Built with Next.js, React, TypeScript, MongoDB & NextAuth.js
 
 <br/>
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss)
-![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge\&logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge\&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge\&logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-06B6D4?style=for-the-badge\&logo=tailwindcss)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge\&logo=mongodb)
 ![NextAuth](https://img.shields.io/badge/NextAuth.js-Authentication-8B5CF6?style=for-the-badge)
-
-<br/>
 
 </div>
 
-PulseMeet enables hosts to create and manage public events while allowing attendees to register, track participation, and access their registered events through a secure dashboard. The platform focuses on simplicity, security, scalability, and an intuitive user experience.
+---
+
+# 📖 Overview
+
+PulseMeet is a modern full-stack Event Registration & Management Platform inspired by event platforms such as Luma.
+
+The application enables hosts to create and manage public events while allowing attendees to discover, register, and track their participation through secure dashboards.
+
+This project was developed as part of the **Byamn Summer Web Development Internship 2026 Assessment** and demonstrates full-stack development skills including authentication, database integration, secure registration workflows, role-based access control, attendee management, and CSV export functionality.
 
 ---
 
-## Overview
+# 🌟 Core Features
 
+## 👨‍💼 Host Features
 
-
-The platform provides a complete event management workflow including:
-
-* Host Authentication
-* Event Creation & Management
-* Public Event Pages
-* Attendee Registration
-* Protected Dashboards
-* CSV Export Functionality
-* Capacity Management
-* Registration Deadline Controls
-* Duplicate Registration Prevention
-
----
-
-## Features
-
-### Host Features
-
-* Secure Host Registration and Login
+* Secure Host Registration & Login
 * Create Public Events
 * Edit Existing Events
 * Delete Events
-* View Event Dashboard
-* Monitor Registrations
+* Manage Event Registrations
+* View Attendee Information
 * Search Attendees
-* Export Attendee Data as CSV
-* Capacity Limit Configuration
-* Registration Cutoff Date Configuration
+* Export Attendee Lists as CSV
+* Capacity Management
+* Registration Deadline Controls
 
-### Attendee Features
+---
 
-* Secure Registration and Login
+## 🎟️ Attendee Features
+
+* Secure Registration & Login
 * Register for Public Events
 * View Registered Events
+* Track Event Participation
 * Access Event Details
-* Track Participation
 
-### Public Features
+---
+
+## 🌐 Public Features
 
 * Public Event Pages
 * Shareable Event URLs
 * Event Information Display
-* Attendee Count Visibility
-
-### Security Features
-
-* Password Hashing using bcryptjs
-* JWT-Based Authentication
-* Protected Dashboard Routes
-* Role-Based Access Control
-* Event Ownership Verification
-* Duplicate Registration Prevention
-* Passwords Never Exposed in APIs or CSV Exports
+* Registration Status Visibility
+* Live Attendee Counts
 
 ---
 
-## Tech Stack
+## 🔒 Security Features
 
-### Frontend
+* Password Hashing with bcryptjs
+* JWT Session Authentication
+* Protected Host Dashboards
+* Role-Based Access Control
+* Event Ownership Verification
+* Duplicate Registration Prevention
+* Passwords Never Exposed in APIs
+* Passwords Never Exported in CSV Reports
+
+---
+
+# ✅ Bonus Features Implemented
+
+* Duplicate Registration Prevention
+* Capacity Limit Enforcement
+* Registration Cutoff Date & Time
+* Public Attendee Count Display
+* Event Editing
+* Event Deletion
+* Attendee Search & Filtering
+* CSV Export Functionality
+* Responsive Mobile-First UI
+* Modern Animated User Interface
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
 
 * Next.js (App Router)
 * React 19
@@ -94,37 +105,38 @@ The platform provides a complete event management workflow including:
 * Framer Motion
 * Lucide React
 
-### Backend
+## Backend
 
 * Next.js Route Handlers
 * NextAuth.js
 * bcryptjs
 
-### Database
+## Database
 
 * MongoDB Atlas
 * Mongoose ODM
 
-### Deployment
+## Deployment
 
 * Vercel
 * MongoDB Atlas
 
 ---
 
-## Architecture
+# 🏗️ Architecture
 
-PulseMeet follows a modern full-stack architecture consisting of:
+PulseMeet follows a modern full-stack architecture consisting of four layers:
 
 ### Presentation Layer
 
 * React Components
 * Next.js App Router
-* Tailwind CSS UI
+* Tailwind CSS
+* Framer Motion
 
 ### Application Layer
 
-* Next.js Route Handlers
+* Route Handlers
 * Business Logic
 * Validation
 * Authorization
@@ -137,12 +149,12 @@ PulseMeet follows a modern full-stack architecture consisting of:
 
 ### Data Layer
 
-* MongoDB
+* MongoDB Atlas
 * Mongoose Models
 
 ---
 
-## Project Structure
+# 📂 Project Structure
 
 ```text
 src/
@@ -154,21 +166,17 @@ src/
 │   └── events/
 │
 ├── components/
-│
 ├── lib/
-│
 ├── models/
-│
 ├── types/
-│
 └── docs/
 ```
 
 ---
 
-## Database Models
+# 🗄️ Database Models
 
-### User
+## User
 
 Stores:
 
@@ -177,7 +185,9 @@ Stores:
 * Password (Hashed)
 * Role (HOST / ATTENDEE)
 
-### Event
+---
+
+## Event
 
 Stores:
 
@@ -189,84 +199,128 @@ Stores:
 * Host Information
 * Capacity
 * Registration Cutoff
-* Status
+* Event Status
 
-### Registration
+---
+
+## Registration
 
 Stores:
 
 * Event Reference
 * Attendee Reference
 
-A unique constraint prevents duplicate registrations.
+A compound unique constraint prevents duplicate registrations.
 
 ---
 
-## API Capabilities
+# 🔌 API Capabilities
 
-### Authentication
+## Authentication
 
 * User Registration
 * User Login
 * Session Management
 
-### Event Management
+## Event Management
 
 * Create Event
 * Edit Event
 * Delete Event
 * Fetch Events
 
-### Registration
+## Registration
 
 * Register for Event
-* Prevent Duplicate Registrations
+* Duplicate Registration Prevention
 * Capacity Validation
-* Cutoff Validation
+* Registration Cutoff Validation
 
-### Dashboard
+## Dashboard
 
 * View Attendees
 * Search Attendees
-* Export CSV
+* CSV Export
 
 ---
 
-## Environment Variables
+# 🌐 Live Demo
+
+Deployment in progress.
+
+The application will be deployed on Vercel before final submission.
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+<p align="center">
+  <img src="./public/screenshots/Home.png" alt="Home Page" width="100%" />
+</p>
+
+---
+
+## 👨‍💼 Host Dashboard
+
+<p align="center">
+  <img src="./public/screenshots/HostDashboard.png" alt="Host Dashboard" width="100%" />
+</p>
+
+---
+
+## 🌐 Public Event Page
+
+<p align="center">
+  <img src="./public/screenshots/PublicEventPage.png" alt="Public Event Page" width="100%" />
+</p>
+
+---
+
+## 🎟️ Attendee Dashboard
+
+<p align="center">
+  <img src="./public/screenshots/AttendeeDashboard.png" alt="Attendee Dashboard" width="100%" />
+</p>
+
+---
+
+# ⚙️ Environment Variables
 
 Create a `.env.local` file:
 
 ```env
-MONGODB_URI=
+MONGODB_URI=your_mongodb_connection_string
 
-NEXTAUTH_SECRET=
+NEXTAUTH_SECRET=your_secret_key
 
-NEXTAUTH_URL=
+NEXTAUTH_URL=http://localhost:3000
 ```
 
 ---
 
-## Local Setup
+# 🚀 Local Setup
 
-### 1. Clone Repository
+## 1. Clone Repository
 
 ```bash
 git clone https://github.com/SrashtiChauhan/PulseMeet.git
 ```
 
-### 2. Navigate into Project
+## 2. Navigate into Project
 
 ```bash
 cd PulseMeet
 ```
 
-### 3. Install Dependencies
+## 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Configure Environment Variables
+## 4. Configure Environment Variables
 
 Create:
 
@@ -274,17 +328,11 @@ Create:
 .env.local
 ```
 
-Add:
+Add the required variables.
 
-```env
-MONGODB_URI=
+---
 
-NEXTAUTH_SECRET=
-
-NEXTAUTH_URL=
-```
-
-### 5. Run Development Server
+## 5. Run Development Server
 
 ```bash
 npm run dev
@@ -298,9 +346,9 @@ http://localhost:3000
 
 ---
 
-## Documentation
+# 📚 Documentation
 
-Detailed project documentation is available in the `/docs` directory:
+Detailed project documentation is available in the `/docs` directory.
 
 * API Documentation
 * Architecture Documentation
@@ -313,55 +361,22 @@ Detailed project documentation is available in the `/docs` directory:
 
 ---
 
-## Future Enhancements
+# 🔮 Future Enhancements
 
-Potential improvements include:
+Potential future improvements include:
 
 * Event Categories
-* Event Images
+* Event Images & Banners
 * Social Authentication
 * Email Notifications
 * Analytics Dashboard
 * Event Discovery Filters
 * Attendance Tracking
+* Community Event Recommendations
 
 ---
 
-##  Screenshots
-
-### 🏠 Home Page
-
-<p align="center">
-  <img src="./public/screenshots/Home.png" alt="Home Page" width="100%" />
-</p>
-
----
-
-### 👨‍💼 Host Dashboard
-
-<p align="center">
-  <img src="./public/screenshots/HostDashboard.png" alt="Host Dashboard" width="100%" />
-</p>
-
----
-
-### 🌐 Public Event Page
-
-<p align="center">
-  <img src="./public/screenshots/PublicEventPage.png" alt="Public Event Page" width="100%" />
-</p>
-
----
-
-### 🎟️ Attendee Dashboard
-
-<p align="center">
-  <img src="./public/screenshots/AttendeeDashboard.png" alt="Attendee Dashboard" width="100%" />
-</p>
-
----
-
-## Author
+# 👩‍💻 Author
 
 **Srashti Chauhan**
 
@@ -369,7 +384,6 @@ Developed as part of the **Byamn Summer Web Development Internship 2026 Assessme
 
 ---
 
-## License
+# 📄 License
 
-This project is intended for educational and internship evaluation purposes.
-
+This project is intended for educational, learning, and internship evaluation purposes.
