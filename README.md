@@ -250,13 +250,7 @@ A compound unique constraint prevents duplicate registrations.
 
 ---
 
-# 🌐 Live Demo
 
-Deployment in progress.
-
-The application will be deployed on Vercel before final submission.
-
----
 
 # 📸 Screenshots
 
