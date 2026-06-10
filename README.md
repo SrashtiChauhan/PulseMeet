@@ -25,7 +25,7 @@ PulseMeet is a modern full-stack Event Registration & Management Platform inspir
 
 The application enables hosts to create and manage public events while allowing attendees to discover, register, and track their participation through secure dashboards.
 
-This project was developed as part of the **Byamn Summer Web Development Internship 2026 Assessment** and demonstrates full-stack development skills including authentication, database integration, secure registration workflows, role-based access control, attendee management, and CSV export functionality.
+This project demonstrates full-stack development skills including authentication, database integration, secure registration workflows, role-based access control, attendee management, and CSV export functionality.
 
 ---
 
@@ -380,7 +380,6 @@ Potential future improvements include:
 
 **Srashti Chauhan**
 
-Developed as part of the **Byamn Summer Web Development Internship 2026 Assessment**.
 
 ---
 
